@@ -1,0 +1,151 @@
+#top-long {
+    margin: 0;
+    width: 100%;
+    background-color: #f6f6f6 !important;
+}
+
+#top-long>div.backstretch {
+    display: none;
+}
+
+/* Styles for the main content */
+.tss-video-content-wrapper {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 20px;
+}
+
+/* Styles for the side panel */
+
+.video-sidepanel-header {
+    text-transform: uppercase;
+    color: #58585a;
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+}
+
+/* Styles for the categories */
+
+.video-categories .category-list .category {
+    color: #794c9e;
+    font-size: 16px;
+    padding: 3px 10px 3px 0px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.video-categories .category-list .category:hover {
+    background-color: #f6f6f6;
+    color: #58585a;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Styles for the tags */
+
+.video-tags {
+    margin-top: 30px;
+}
+
+.video-tags .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-tags .tag-list .tag {
+    color: #794c9e;
+    font-size: 16px;
+    padding: 2px 6px 2px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.video-tags .tag:hover {
+    color: #58585a;
+    font-weight: 700;
+}
+
+/* Styles for the subscripe part */
+.video-subscribe {
+    margin-top: 30px;
+}
+
+/* Styles for the video panel header */
+
+.videos-panel-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+}
+
+.videos-panel-header .selected-category {
+    color: #794c9e;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+.videos-panel-header .video-sort-option {
+    text-align: end;
+}
+
+/* Styles for the video grid */
+.video-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.video-grid .video {
+    text-align: center;
+}
+
+.video-grid .video .video-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #58585a;
+    text-align: center;
+    line-height: 1.2em;
+    max-height: 3.6em;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    cursor: pointer;
+}
+
+.video-wrapper:hover .video-title {
+    cursor: pointer;
+    color: #794c9e;
+}
+
+.video-grid .video .video-date {
+    font-size: 15px;
+}
+
+/* Styles for the more videos button */
+.more-videos-button {
+    user-select: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #8dc63f;
+    text-align: center;
+    font-size: 18px;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.more-videos-button:hover {
+    background-color: #609928;
+}

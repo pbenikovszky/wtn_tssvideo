@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.tss-manage-tags-container {
+    width: 900px;
+    min-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+
+.manage-tags-header {
+    margin: 20px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.new-tag-wrapper,
+.tag-filter-wrapper {
+    display: flex;
+}
+
+.new-tag-wrapper input {
+    box-sizing: border-box;
+    height: 30px !important;
+}
+
+.tags-header-icon {
+    font-size: 32px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.manage-tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.manage-tags-wrapper .tag:hover {
+    background-color: #609928;
+}
+
+.manage-tags-wrapper .tag .material-icons {
+    transition: all 200ms linear;
+}
+
+.manage-tags-wrapper .tag .material-icons:hover {
+    color: red;
+}
+
+.tag {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #8cc63f;
+    color: white;
+}
+
+.tag i {
+    margin-left: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}

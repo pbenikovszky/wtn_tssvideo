@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.tss-manage-categories-container {
+    width: 600px;
+    min-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+
+.manage-categories-header {
+    margin: 20px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.new-category-wrapper input {
+    box-sizing: border-box;
+    height: 30px !important;
+}
+
+.categories-header-icon {
+    font-size: 32px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.manage-categories-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+
+.new-category-wrapper,
+.category-filter-wrapper {
+    display: flex;
+}
+
+.category-table {
+    width: 90%;
+}
+
+.category-table th,
+.category-table td {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.category-table-button {
+    cursor: pointer;
+}
+
+.active-page {
+    display: block;
+}

@@ -1,0 +1,43 @@
+body {
+    background: rgb(249, 249, 249);
+    background: radial-gradient(circle, rgba(249, 249, 249, 1) 14%, rgba(203, 214, 227, 1) 100%);
+}
+
+.tss-page-container {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+.tss-sidebar-wrapper {
+    width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.65);
+}
+
+.tss-sidebar-header {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.tssmenu-btn {
+    padding: 10px 5px;
+    user-select: none;
+    font-size: 16px;
+}
+
+.tss-menu-selectable {
+    transition: background-color 200ms linear;
+}
+
+.tss-menu-selectable:hover {
+    background-color: #8cc63f;
+    cursor: pointer;
+}
+
+.tss-menu-active {
+    font-weight: bold;
+}

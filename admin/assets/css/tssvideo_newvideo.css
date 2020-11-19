@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+.tss-new-video-container {
+    width: 800px;
+    min-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.65);
+}
+
+.tss-newvideo-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.tss-newvideo-label {
+    width: 120px;
+}
+
+.tss-input-textfield {
+    margin-bottom: 0 !important;
+    width: 380px;
+    height: 30px !important;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.tss-input-textarea {
+    margin-bottom: 0 !important;
+    width: 450px;
+    height: 150px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#video_thumbnail {
+    border: 1px solid #ccc;
+}
+
+/* Categories holder */
+.category-wrapper {
+    width: 370px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 120px;
+    display: none;
+}
+
+.category-wrapper .category {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    user-select: none;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+.category-wrapper .category:first-child {
+    border-top: 0;
+}
+
+.category-wrapper .category span {
+    width: 95%;
+}
+
+.category-wrapper .category i {
+    cursor: pointer;
+}
+
+.category-wrapper .category:hover {
+    background-color: #ddd;
+}
+
+/* New VIDEO TAGS */
+
+.tag-container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    min-height: 40px;
+    width: 380px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.tag-container .tag,
+.manage-tags-wrapper .tag {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #8cc63f;
+    color: white;
+}
+
+.tag i {
+    margin-left: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.tag-container input {
+    flex: 1;
+    font-size: 13px;
+    padding: 5px;
+    outline: none !important;
+    border: 0;
+    max-width: 100px;
+}
+
+.tag-wrapper {
+    position: relative;
+}
+
+.autocomplete-tags-list,
+.autocomplete-categories-list {
+    margin: 2px 0 0 0;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: none;
+}
+
+.autocomplete-tags-list.visible,
+.autocomplete-categories-list.visible {
+    display: block;
+}
+
+.autocomplete-tags-list li,
+.autocomplete-categories-list li {
+    padding: 5px;
+}
+
+.autocomplete-tags-list li:hover,
+.autocomplete-categories-list li:hover {
+    cursor: pointer;
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+.autocomplete-tags-list li.highlighted,
+.autocomplete-categories-list li.highlighted {
+    background: #8cc63f;
+    color: #fff;
+}
+
+/* New VIDEO TAGS ENDS */
+
+.tss-newvideo-button {
+    padding: 10px 25px;
+    background-color: #8cc63f;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tss-newvideo-button:hover {
+    background-color: #609928;
+}
+
+.tss-yid-validate-button {
+    margin-left: 30px;
+}

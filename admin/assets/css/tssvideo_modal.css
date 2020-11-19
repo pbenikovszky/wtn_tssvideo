@@ -1,0 +1,54 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tss-modal-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+    margin: 0;
+}
+
+.tss-modal-container.visible {
+    display: block;
+}
+
+.tss-modal {
+    text-align: center;
+    position: absolute;
+    /* width: 350px;
+    height: 100px; */
+    top: 10%;
+    left: 50%;
+    padding: 30px;
+    transform: translateX(-50%);
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: white;
+}
+
+.tss-modal-button {
+    padding: 5px 15px;
+    background-color: #8cc63f;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 250ms linear;
+}
+
+.tss-modal-button:hover {
+    background-color: #609928;
+}
+
+.tss-modal-button.disabled-button {
+    pointer-events: none;
+    background-color: #aaa !important;
+}

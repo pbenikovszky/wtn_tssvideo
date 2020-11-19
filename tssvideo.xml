@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+
+    <name>TSS Video</name>
+    <creationDate>June 2019</creationDate>
+    <author>Peter Benikovszky</author>
+    <authorEmail>pbenikovszky@gmail.com</authorEmail>
+    <authorUrl>http://www.terrastormsolutions.com</authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <version>0.0.1</version>
+    <description>WTN videó oldal</description>
+
+    <install>        <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>        <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>        <!-- Runs on update; New since J2.5 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>tssvideo.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>assets</folder>
+        <folder>models</folder>
+    </files>
+
+    <administration>
+
+        <!-- Menu link -->
+        <menu link='index.php?option=com_tssvideo'>COM_TSSVIDEO_MENULINK</menu>
+
+        <!-- Files  -->
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>tssvideo.php</filename>
+            <filename>controller.php</filename>
+            <folder>assets</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>sql</folder>
+        </files>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_tssvideo.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_tssvideo.sys.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_tssvideo.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_tssvideo.sys.ini</language>
+		</languages>        
+
+    </administration>
+
+    <updateservers>
+        <server type="extension" name="TSSVideo Updates">http://dev.terrastormsolutions.com/tssvideoplugin/updates.xml</server>
+    </updateservers>
+
+</extension>
